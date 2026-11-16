@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="/login"method="get">
+         <label for="name">
+            Name:
+        <input type="text" name=" username"id="name"required placeholder="eg.Ayu" pattern="[A-Za-z]+">
+        </label><br>
+        <br>
+        <label for="email">
+            Email:
+            <input type="email" name="email"id="email" required placeholder="eg.abc123@gmail.com">
+        </label><br>
+        <br>
+        <label for="password">
+            Password:
+            <input type="password" name="password"id="password"required minlength="6" maxlength="9 ">
+        </label><br>
+        <br>
+        <label for="mobile">
+            Mobile no:
+            <input type="tel" name="mobile"id="mobile"required minlegth="10" maxlength="10" pattern="[6-9]{1}[0-9]{9}">
+        </label><br>
+        <br>
+        <label for="age">
+            Age:
+            <input type="number" name="" id="18" min="18" max="60" required>
+          <br>
+          <br>
+        </label>
+
+         <label for="">Stream</label>
+         <BR><BR>
+
+         <input type="radio" name="stream"id="PCM">
+         <label for="PCM">PCM</label>
+
+         <INPUT TYPE="radio" name="stream"id="PCB">
+            <label for="PCB">PCB</label>
+
+            <input type="radio" name="stream"id="Commerce">
+            <label for="Commerce">Commerce</label>
+            <br>
+            <br>
+            <label for="">Date of birth:
+                <input type="date" name="" id="dob">
+            </label>
+            <br>
+            <br>
+             <label for="city">City</label>
+             <select name="" id="City">
+             
+        <option value="">Delhi</option>
+        <option value="">Munbai</option>
+        <option value="">Bengluru</option>
+        <option value="">Kolkata</option>
+        <option value="">Jaipur</option>
+        <option value="">Lucknow</option>
+         </select>
+         <br>
+         <br>
+
+         <label for="address">Address</label>
+         <textarea name=""id="Address" rows="10" cols="40"></textarea>
+         <br>
+         <br>
+
+
+            <input type="checkbox" name="" id="terms">
+            <label for="terms">I accept the terms & conditions</label>
+            <br>
+            <br>
+
+            <input type="file" name="" id="">
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button disabled>Send</button>
+    </form>
+    
+</body>
+</html>
